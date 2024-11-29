@@ -1,0 +1,15 @@
+Querys de verificação de dados
+
+Verificar integridade dos dados após execução dos testes:
+
+-- Verificar se o usuário foi criado pelo Admin
+SELECT * FROM Usuario WHERE email = 'teste@empresa.com';
+
+-- Verificar se o nome do usuário foi atualizado pelo Admin
+SELECT * FROM Usuario WHERE email = 'teste@empresa.com';
+
+-- Verificar se o usuário foi excluído pelo Admin
+SELECT * FROM Usuario WHERE email = 'teste@empresa.com';
+
+-- Verificar relacionamento entre usuário e funcionário pelo Admin
+SELECT Usuario.nome, Funcionario.nome FROM Usuario INNER JOIN Funcionario ON Usuario.id_usuario = Funcionario.id_usuario;
