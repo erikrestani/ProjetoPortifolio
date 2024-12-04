@@ -10,7 +10,8 @@
 
   <h2>📖 About</h2>
   <p>
-    This project is a personal portfolio created to enhance my system development skills. It allowed me to practice and improve essential web development techniques while showcasing my work and achievements.
+    This project is a personal portfolio created to enhance my system development skills. It allowed me to practice and improve essential web development techniques while showcasing my work and achievements, 
+    You can visually check it at: https://erikrestani.github.io/ProjetoPortifolio/
   </p>
 
   <h2>💻 Technologies Used</h2>
