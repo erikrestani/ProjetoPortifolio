@@ -1,4 +1,4 @@
-/* ESTILO GERAL */
+/* GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-.interface {
+.container {
     max-width: 1580px;
     margin: 0 auto;
 }
@@ -20,7 +20,7 @@ body {
     display: flex;
 }
 
-.btn-contato button {
+.contact-button button {
     padding: 12px 50px;
     font-size: 18px;
     font-weight: 600;
@@ -31,23 +31,21 @@ body {
     border-radius: 30px;
     animation: gradientFade 3s ease infinite;
     cursor: pointer;
-    font-size: medium;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-/* ESTILO DA LOGO */
+/* LOGO STYLES */
 header .logo img {
-    max-width: 180px; /* Defina o tamanho máximo desejado para sua logo */
-    height: auto; /* Isso vai manter a proporção da imagem */
+    max-width: 180px;
+    height: auto;
 }
 
-/* ESTILO DO CABEÇALHO */
+/* HEADER STYLES */
 header {
     padding: 10px 5%;
-    font-size: large;
 }
 
-header > .interface {
+header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,11 +55,11 @@ header a {
     color: #513e66;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 header a:hover {
-    color: #ffff;
+    color: #fff;
     transform: scale(1.2);
 }
 
@@ -74,7 +72,7 @@ header nav ul li {
     padding: 0 75px;
 }
 
-.btn-contato button:hover {
+.contact-button button:hover {
     box-shadow: 0px 0px 8px;
     transform: scale(1.05);
 }
@@ -91,46 +89,46 @@ header nav ul li {
     }
 }
 
-/* Estilo do topo do site */
-section.topo-do-site {
+/* SITE HEADER STYLES */
+section.site-header {
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex {
+section.site-header .flex {
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.topo-do-site h1 {
-    color: #ffff;
+.site-header h1 {
+    color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.site-header .text-header h1 span {
     color: #8906e6;
 }
 
-.topo-do-site .txt-topo-site p{
+.site-header .text-header p {
     color: #fff;
     margin: 40px 0;
 }
 
-/* Estilo da imagem de perfil */
-.topo-do-site .img-topo-site img {
-    width: 600px; /* Aumentar o tamanho da imagem */
+/* PROFILE IMAGE STYLES */
+.site-header .profile-image img {
+    width: 600px;
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    margin-left: auto; /* Empurra a imagem para a direita */
-    display: block; /* Garante que a margem funcione corretamente */
+    animation: float 2s ease-in-out infinite alternate;
+    margin-left: auto;
+    display: block;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes float {
+    0% {
         top: 0;
     }
-    100%{
-        top:30px
+    100% {
+        top: 30px;
     }
 }
