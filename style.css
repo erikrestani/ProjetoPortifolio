@@ -34,6 +34,17 @@ body {
     transition: 0.2s;
 }
 
+h2.title{
+    color: white;
+    font-size: 38px;
+    text-align:center;
+
+}
+
+h2.title span{
+    color:#8906e6
+}
+
 /* LOGO STYLES */
 header .logo img {
     max-width: 180px;
@@ -131,4 +142,56 @@ section.site-header .flex {
     100% {
         top: 30px;
     }
+}
+
+/* Style Specialties */
+section.specialties {
+    padding: 40px 4%;
+}
+
+section.specialties .flex {
+    display: flex;
+    gap: 30px;  
+    margin-top: 45px;
+    justify-content: center; 
+    align-items: stretch; 
+}
+
+.specialties .specialty-box {
+    color: white;
+    padding: 30px;
+    border: 2px solid #8906e628;
+    border-radius: 20px;
+    text-align: center;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    flex: 1;
+    min-height: 250px; 
+    max-width: 300px; 
+    box-sizing: border-box; 
+}
+
+.specialties .specialty-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.336);
+}
+
+.specialties .specialty-box i {
+    font-size: 40px; 
+    color: #8906e6;
+    margin-bottom: 10px; 
+}
+
+.specialties .specialty-box h3 {
+    font-size: 20px; 
+    margin: 10px 0;
+}
+
+.specialties .specialty-box p {
+    font-size: 14px; 
+    margin: 10px 0;
+    line-height: 1.4; 
 }
