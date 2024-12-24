@@ -196,3 +196,12 @@ section.specialties .flex {
     margin: 10px 0;
     line-height: 1.4; 
 }
+
+/*Style about*/
+section.about{
+    padding: 40px 4%;
+    justify-content: center;
+    text-align: center;
+    color:#8906e6;
+    font-size:20px;
+}
