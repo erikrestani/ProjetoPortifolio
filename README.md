@@ -2,4 +2,4 @@
 
 Personal portfolio built with HTML, CSS and vanilla JavaScript.
 
-Live: https://erikrestani.github.io/ProjetoPortifolio/
+Live: https://projeto-portifolio-lake.vercel.app/
