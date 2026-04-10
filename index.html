@@ -7,13 +7,15 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
     <!-- END GOOGLE FONTS -->
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- END ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="style.css">
-    <title>EEMR Agency</title>
+    <title>Érik Restani — Portfolio</title>
 </head>
 
 <body>
@@ -27,36 +29,47 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#specialties-page">Specialties</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#specialties-page" data-i18n="nav_specialties">Specialties</a></li>
+                    <li><a href="#about-page" data-i18n="nav_about">About</a></li>
+                    <li><a href="#projects-page" data-i18n="nav_projects">Projects</a></li>
                 </ul>
             </nav>
-            <div class="contact-button">
-                <a href="#">
-                    <button>Contact</button>
-                </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header-actions">
+                <button class="lang-btn" id="lang-btn">PT-BR</button>
+                <div class="contact-button">
+                    <a href="#contact-page">
+                        <button data-i18n="nav_contact">Contact</button>
+                    </a>
+                </div>
             </div>
         </div><!-- container -->
     </header>
 
     <main>
-        <section class="site-header">
+
+        <!-- Hero -->
+        <section class="site-header" id="hero">
             <div class="container">
                 <div class="flex">
                     <div class="text-header">
                         <h1>TURNING IDEAS INTO DIGITAL REALITY<span>.</span></h1>
-
-                        <p>
+                        <p data-i18n="hero_desc">
                             Bring your ideas to life with my expertise in creativity, innovation, and adaptability.
                             Using the most advanced technologies, I am ready to turn your dreams into tangible,
-                            impactful projects. Imagine bold solutions, overcome challenges, and create incredible
-                            experiences that highlight your vision in the digital world!
+                            impactful projects.
                         </p>
                         <div class="contact-button">
-                            <a href="#"></a>
-                            <button>Get in touch</button>
+                            <a href="#contact-page">
+                                <button data-i18n="hero_btn">Get in touch</button>
+                            </a>
                         </div>
                     </div>
                     <div class="profile-image">
@@ -66,33 +79,114 @@
             </div>
         </section>
 
-        <!-- Second Page: Specialties -->
+        <!-- Specialties -->
         <section id="specialties-page" class="specialties">
             <div class="container">
-                <h2 class="title">MY <span>SPECIALTIES.</span></h2>
+                <h2 class="title reveal" data-i18n-html="spec_title">MY <span>SPECIALTIES.</span></h2>
                 <div class="flex">
-                    <div class="specialty-box">
+                    <div class="specialty-box reveal">
                         <i class="bi bi-phone"></i>
-                        <h3>MOBILE DEVELOPMENT</h3>
-                        <p>Mobile development for low/medium/high complexity apps using flutter</p>
+                        <h3 data-i18n="spec1_title">MOBILE DEVELOPMENT</h3>
+                        <p data-i18n="spec1_desc">Mobile development for low/medium/high complexity apps using Flutter
+                        </p>
                     </div><!-- specialty-box -->
-                    <div class="specialty-box">
+                    <div class="specialty-box reveal">
                         <i class="bi bi-braces"></i>
-                        <h3>WEB DEVELOPMENT</h3>
-                        <p>Web development using HTML/CSS/JS</p>
+                        <h3 data-i18n="spec2_title">WEB DEVELOPMENT</h3>
+                        <p data-i18n="spec2_desc">Web development using React, HTML/CSS/JS</p>
                     </div><!-- specialty-box -->
-                    <div class="specialty-box">
-                        <i class="bi bi-people-fill"></i>
-                        <h3>TEAMWORK</h3>
-                        <p>Experience with teamwork and proactivity</p>
+                    <div class="specialty-box reveal">
+                        <i class="bi bi-cpu"></i>
+                        <h3 data-i18n="spec3_title">ERP & INTEGRATIONS</h3>
+                        <p data-i18n="spec3_desc">ERP integrations and complex business rules with Protheus and Sankhya
+                        </p>
+                    </div><!-- specialty-box -->
+                    <div class="specialty-box reveal">
+                        <i class="bi bi-robot"></i>
+                        <h3 data-i18n="spec4_title">AI AGENTS</h3>
+                        <p data-i18n="spec4_desc">AI Agents with context-aware intelligence and rule-based decision
+                            architectures</p>
                     </div><!-- specialty-box -->
                 </div><!-- flex -->
             </div><!-- container -->
-            <section id = "about-page" class = "about">
-                <h2>ABOUT<h2><span>ME</span>
-            </section><!--About-->
         </section><!-- specialties -->
+
+        <!-- About -->
+        <section id="about-page" class="about">
+            <div class="container">
+                <h2 class="title reveal" data-i18n-html="about_title">ABOUT <span>ME.</span></h2>
+                <div class="about-content reveal">
+                    <p class="about-desc" data-i18n="about_desc">
+                        I'm Érik Restani, a Full-Stack Developer passionate about building systems that actually solve
+                        problems. I specialize in mobile development with Flutter, backend solutions with Java, Node.js,
+                        and TypeScript, and ERP integrations with Protheus and Sankhya. I also develop AI Agents
+                        leveraging context-aware intelligence and rule-based decision architectures.
+                    </p>
+                    <div class="tech-stack">
+                        <h3 class="tech-title" data-i18n="tech_title">TECH STACK</h3>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Flutter</span>
+                            <span class="tech-pill">Dart</span>
+                            <span class="tech-pill">Java</span>
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">NestJS</span>
+                            <span class="tech-pill">TypeScript</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">ADVPL</span>
+                            <span class="tech-pill">TLPP</span>
+                            <span class="tech-pill">Protheus</span>
+                            <span class="tech-pill">Sankhya</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- about -->
+
+        <!-- Projects -->
+        <section id="projects-page" class="projects">
+            <div class="container">
+                <h2 class="title reveal" data-i18n-html="proj_title">MY <span>PROJECTS.</span></h2>
+                <div class="projects-grid">
+                    <!-- Rendered by app.js from data.js -->
+                </div><!-- projects-grid -->
+            </div><!-- container -->
+        </section><!-- projects -->
+
+        <!-- Contact -->
+        <section id="contact-page" class="contact-section">
+            <div class="container">
+                <h2 class="title reveal" data-i18n-html="contact_title">GET IN <span>TOUCH.</span></h2>
+                <p class="contact-desc" data-i18n="contact_desc">Have a project in mind or want to work together? Feel
+                    free to reach out!</p>
+                <div class="social-links">
+                    <a href="https://github.com/erikrestani" target="_blank" class="social-link">
+                        <i class="bi bi-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erikrestani/" target="_blank" class="social-link">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:erikeduardorestani@gmail.com" class="social-link">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div><!-- container -->
+        </section><!-- contact -->
+
     </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_text">© 2025 Érik Restani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
